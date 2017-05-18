@@ -63,7 +63,7 @@ func (this *LogPoolMgr) flush() {
 		this.usedPool = this.usedPool.next
 		this.usedMutex.Unlock()
 		for idx, buf := range printPool.buffList {
-			if buf == nil { // 说明这个时候还没附上值
+			if buf == nil { // 说明这个时候还没附上值(可以考虑推迟一段时间之后再打印)
 				continue
 			}
 			if idx >= int(printPool.end) {
