@@ -405,7 +405,7 @@ func init() {
 
 	// Default stderrThreshold is ERROR.
 	logging.stderrThreshold = errorLog
-	//SetAsyncFlush(true)
+	SetAsyncFlush(true)
 	go logging.flushDaemon()
 }
 
