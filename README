@@ -1,4 +1,4 @@
-glog clone from https://github.com/golang/glog
+glog, fork https://github.com/golang/glog
 ====
 
 Leveled execution logs for Go.
